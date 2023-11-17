@@ -12,7 +12,6 @@ router.get("/", (req, res, next) => {
     .catch(next);
 });
 
-module.exports = router;
 router.post("/", (req, res, next) => {
   helpers
     .addTask(req.body)
